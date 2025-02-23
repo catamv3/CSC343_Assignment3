@@ -3,6 +3,7 @@ CSC 343
 Assignment 3
 2/23/25
 1. When a process creates a new process using the fork() operation, which of the following state is shared which are not between the parent process and the child process? Explain your answers couple of sentences.
+
 When a process creates a new process using fork, shared memory segments are the only states
 shared between the child and parent process. Respectively, when fork() is called on a process,
 the child process will still have access to the parents shared memory segments–such as file descriptors.
@@ -10,7 +11,7 @@ Alternatively, the child process does not have access to either the parents heap
 Once a child process is created, memory is allocated to the child process for a unique stack/heap.
 
 
-2. Discuss Apple’s mobile iOS and android operating system services for concurrent processing. Discuss three major complications that concurrent processing adds to an operating system. 
+3. Discuss Apple’s mobile iOS and android operating system services for concurrent processing. Discuss three major complications that concurrent processing adds to an operating system. 
 	
 In computing, concurrent processing refers to a system's ability to divide its resources 
 to several tasks “seemingly” at the same time. While these processes are handled within milliseconds
